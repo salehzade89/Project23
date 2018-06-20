@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Observable.cpp"
+#include "Observable.h"
 
 int main()
 {

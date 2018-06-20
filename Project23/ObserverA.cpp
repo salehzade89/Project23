@@ -1,24 +1,14 @@
-#ifndef OBSERVERA_CPP
-#define OBSERVERA_CPP
-
-#include "IObserver.cpp"
+#include "IObserver.h"
 #include <iostream>
 #include <string>
+#include "ObserverA.h"
 
-
-class ObserverA : public IObserver
+void ObserverA::update(const std::string& t) noexcept
 {
-	std::string text;
-public:
-	void update(const std::string& t) noexcept override
-	{
-		text = t;
-		std::cout << "ObserverA text : " << text << '\n';
-	}
-	const std::string& getText() const noexcept
-	{
-		return text;
-	}
-};
-
-#endif // !OBSERVERA_CPP
+	text = t;
+	std::cout << "ObserverA text : " << text << '\n';
+}
+const std::string& ObserverA::getText() const noexcept
+{
+	return text;
+}

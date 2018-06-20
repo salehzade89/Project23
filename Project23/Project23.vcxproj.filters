@@ -16,13 +16,13 @@
     <Filter Include="Source Files\Observer">
       <UniqueIdentifier>{d4178c78-209d-49fa-a4d9-634ad066b5c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Observer">
+      <UniqueIdentifier>{51fdbb0d-d024-4f40-b0f8-0a6dbd918660}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IObserver.cpp">
-      <Filter>Source Files\Observer</Filter>
     </ClCompile>
     <ClCompile Include="ObserverA.cpp">
       <Filter>Source Files\Observer</Filter>
@@ -33,5 +33,19 @@
     <ClCompile Include="Observable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IObserver.h">
+      <Filter>Header Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverA.h">
+      <Filter>Header Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverB.h">
+      <Filter>Header Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
