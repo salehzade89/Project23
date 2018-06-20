@@ -6,7 +6,7 @@
 
 struct IObserver
 {
-	virtual void update(std::string&) noexcept = 0;
+	virtual void update(const std::string&) noexcept = 0;
 };
 
 #endif // !IOBSERVER_CPP
